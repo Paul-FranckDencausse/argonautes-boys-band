@@ -1,231 +1,180 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html> <!-- Déclaration du type de document HTML -->
+<html lang="fr"> <!-- Définition de la langue de la page -->
 <head>
-<title>Les Argonautes</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+    <title>Les Argonautes</title> <!-- Titre de la page -->
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Méta-balise pour le responsive design -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Import de la feuille de style W3.css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Import de la police de caractères Lato -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Import des icônes Font Awesome -->
+    <style>
+        body {font-family: "Lato", sans-serif} /* Style CSS pour le corps du texte */
+        .mySlides {display: none} /* Style CSS pour masquer les diapositives des images */
+    </style>
 </head>
 <body>
 
-
+<!-- Barre de navigation -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">ACCUEIL</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GROUPE</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONCERTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">EN SAVOIR PLUS <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">La Boutique</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Médias</a>
-      </div>
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">ACCUEIL</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GROUPE</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONCERTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">EN SAVOIR PLUS <i class="fa fa-caret-down"></i></button>     
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">La Boutique</a>
+                <a href="#" class="w3-bar-item w3-button">Extras</a>
+                <a href="#" class="w3-bar-item w3-button">Médias</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
 </div>
 
-
+<!-- Menu de navigation pour les petits écrans -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUPE</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONCERTS</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOUTIQUE</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUPE</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONCERTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOUTIQUE</a>
 </div>
 
-
+<!-- Contenu principal -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://i.pinimg.com/originals/35/ec/88/35ec88f9078af586ad2e5aa7b9e3048b.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Iolcos</h3>
-      <p><b>Départ pour la grande aventure!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://corgibytes.com/images/blog/theseus/greek-ship-optimized.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Pagasae</h3>
-      <p><b>Il va nous falloir un plus grand bateau!.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://i.pinimg.com/originals/14/cf/b6/14cfb6f4272be71d61ae6ecfc674a9fc.png" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Colchide</h3>
-      <p><b>Arrivée à bon port.</b></p>    
-    </div>
-  </div>
-
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">LE GROUPE</h2>
-    <p class="w3-opacity"><i>Nous adorons la musique et les béliers jaunes.</i></p>
-    <p class="w3-justify"γρύλλος εξηκολούθησε τρύζων υπό τα χόρτα, και η αηδών μέλπουσα υπό το φύλλωμα.Απείθεια εις τους χρησμούς του Απόλλωνος δεν επετρέπετο τότε, και ετιμωρείτο φρικτά υπ αυτού και των άλλων συναδέλφων των θεών, αναλόγως της ειδικότητος εκάστου. </p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Jason</p>
-        <img src="https://1.bp.blogspot.com/-YtWtZizF__w/WsvqR7aGDkI/AAAAAAAAA6I/QidWcDFObxMxAX1pdXDcWhbI8uEb2EEVgCLcBGAs/s1600/jason.jpgr" class="w3-round w3-margin-bottom" alt="Jason" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Médée</p>
-        <img src="http://www.cosmovisions.com/images/Medee-Sandys.jpg" class="w3-round w3-margin-bottom" alt="Médée" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Castor et Pollux</p>
-        <img src="http://www.ninagryphon.com/wp-content/uploads/2017/06/Castor-and-Pollux-1.jpeg" class="w3-round" alt="Castor et Pollux" style="width:60%">
-      </div>
-    </div>
-  </div>
-
- 
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">CONCERTS</h2>
-      <p class="w3-opacity w3-center"><i>Pensez à réserver vos tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Septembre <span class="w3-tag w3-red w3-margin-left">Epuisé</span></li>
-        <li class="w3-padding">Octobre <span class="w3-tag w3-red w3-margin-left">Epuisé</span></li>
-        <li class="w3-padding">Novembre <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://viago.ca/wp-content/uploads/2018/02/Athene_Grece-1.jpg" alt="Athènes" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Athènes</b></p>
-            <p class="w3-opacity">14 Avril 2023</p>
-            <p>μυστηριώδης εκείνος κοιτών, όπου τόσον παράδοξου διήγαγε νύκτα, απήστραπτεν ήδη όλην αυτού την λαμπρότητα υπό το.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Tickets</button>
-          </div>
+    <!-- Diapositives d'images avec texte -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://i.pinimg.com/originals/35/ec/88/35ec88f9078af586ad2e5aa7b9e3048b.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Iolcos</h3>
+            <p><b>Départ pour la grande aventure!</b></p>   
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://tse4.mm.bing.net/th?id=OIP.Ud2zhnsUmz_la_8UCnITlwHaHa&pid=Api" alt="Troie" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Troie</b></p>
-            <p class="w3-opacity">20 Mai 2023</p>
-            <p>μυστηριώδης εκείνος κοιτών, όπου τόσον παράδοξου διήγαγε νύκτα, απήστραπτεν ήδη όλην αυτού την λαμπρότητα υπό το.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://www.guillaumeservos.com/wp-content/uploads/2017/02/plage-ithaque-grece.jpg" alt="Ithaques" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Ithaques</b></p>
-            <p class="w3-opacity">Avril 2033?</p>
-            <p>μυστηριώδης εκείνος κοιτών, όπου τόσον παράδοξου διήγαγε νύκτα, απήστραπτεν ήδη όλην αυτού την λαμπρότητα υπό το</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tickets</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets,15 € par tête de pipe</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i>Envoyer</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAIEMENT <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Fermer <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Besoin <a href="#" class="w3-text-blue">d'aide?</a></p>
-      </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://corgibytes.com/images/blog/theseus/greek-ship-optimized.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Pagasae</h3>
+            <p><b>Il va nous falloir un plus grand bateau!.</b></p>    
+        </div>
     </div>
-  </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://i.pinimg.com/originals/14/cf/b6/14cfb6f4272be71d61ae6ecfc674a9fc.png" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Colchide</h3>
+            <p><b>Arrivée à bon port.</b></p>    
+        </div>
+    </div>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Vous êtes fan? Laissez nous un message!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Spartes,Grèce<br>
-        <i class="fa fa-phone" style="width:30px"></i> 0600000000<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> pigeon voyageur : jason@argonautes.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name">
+    <!-- Section sur le groupe -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide">LE GROUPE</h2>
+        <p class="w3-opacity"><i>Nous adorons la musique et les béliers jaunes.</i></p>
+        <p class="w3-justify">γρύλλος εξηκολούθησε τρύζων υπό τα χόρτα, και η αηδών μέλπουσα υπό το φύλλωμα.Απείθεια εις τους χρησμούς του Απόλλωνος δεν επετρέπετο τότε, και ετιμωρείτο φρικτά υπ αυτού και των άλλων συναδέλφων των θεών, αναλόγως της ειδικότητος εκάστου.</p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third">
+                <p>Jason</p>
+                <img src="https://1.bp.blogspot.com/-YtWtZizF__w/WsvqR7aGDkI/AAAAAAAAA6I/QidWcDFObxMxAX1pdXDcWhbI8uEb2EEVgCLcBGAs/s1600/jason.jpgr" class="w3-round w3-margin-bottom" alt="Jason" style="width:60%">
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Pigeon voyageur" required name="text">
+            <div class="w3-third">
+                <p>Médée</p>
+                <img src="http://www.cosmovisions.com/images/Medee-Sandys.jpg" class="w3-round w3-margin-bottom" alt="Médée" style="width:60%">
             </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">ENVOYER</button>
-        </form>
-      </div>
+            <div class="w3-third">
+                <p>Castor et Pollux</p>
+                <img src="http://www.ninagryphon.com/wp-content/uploads/2017/06/Castor-and-Pollux-1.jpeg" class="w3-round" alt="Castor et Pollux" style="width:60%">
+            </div>
+        </div>
     </div>
-  </div>
 
-</div>
+    <!-- Section sur les concerts -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">CONCERTS</h2>
+            <p class="w3-opacity w3-center"><i>Pensez à réserver vos tickets!</i></p><br>
 
-<img src="https://www.argonautes.eu/wp-content/uploads/2016/08/Argonautes-Restaurant-Grec-et-livraison-domicile-Grimbergen-Bruxelles.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+            <!-- Liste des concerts -->
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">Septembre <span class="w3-tag w3-red w3-margin-left">Epuisé</span></li>
+                <li class="w3-padding">Octobre <span class="w3-tag w3-red w3-margin-left">Epuisé</span></li>
+                <li class="w3-padding">Novembre <span class="w3-badge w3-right w3-margin-right">3</span></li>
+            </ul>
 
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+            <!-- Détails des concerts -->
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="https://viago.ca/wp-content/uploads/2018/02/Athene_Grece-1.jpg" alt="Athènes" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Athènes</b></p>
+                        <p class="w3-opacity">14 Avril 2023</p>
+                        <p>μυστηριώδης εκείνος κοιτών, όπου τόσον παράδοξου διήγαγε νύκτα, απήστραπτεν ήδη όλην αυτού την λαμπρότητα υπό το.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Tickets</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Ud2zhnsUmz_la_8UCnITlwHaHa&pid=Api" alt="Troie" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Troie</b></p>
+                        <p class="w3-opacity">20 Mai 2023</p>
+                        <p>μυστηριώδης εκείνος κοιτών, όπου τόσον παράδοξου διήγαγε νύκτα, απήστραπτεν ήδη όλην αυτού την λαμπρότητα υπό το.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tickets</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="https://www.guillaumeservos.com/wp-content/uploads/2017/02/plage-ithaque-grece.jpg" alt="Ithaques" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Ithaques</b></p>
+                        <p class="w3-opacity">Avril 2033?</p>
+                        <p>μυστηριώδης εκείνος κοιτών, όπου τόσον παράδοξου διήγαγε νύκτα, απήστραπτεν ήδη όλην αυτού την λαμπρότητα υπό το</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script>
+    <!-- Modal pour l'achat de tickets -->
+    <div id="ticketModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Tickets,15 € par tête de pipe</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="How many?">
+                <p><label><i class="fa fa-user"></i>Envoyer</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAIEMENT <i class="fa fa-check"></i></button>
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Fermer <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Besoin <a href="#" class="w3-text-blue">d'aide?</a></p>
+            </div>
+        </div>
+    </div>
 
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-</body>
-</html>
+    <!-- Section de contact -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>Vous êtes fan? Laissez nous un message!</i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Spartes,Grèce<br>
+                <i class="fa fa-phone" style="width:30px"></i> 0600000000<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> pigeon voyageur : jason@argonautes.com<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Pigeon voyageur" required name="text">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-section w3-right" type="submit">ENVOYER</button>
+                </form>
+            </div>
